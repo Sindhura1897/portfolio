@@ -1,0 +1,526 @@
+/* Base Reset & Variables */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #1a3c5e;
+  --accent-color: #00a1a7;
+  --background-color: #f8f9fa;
+  --text-color: #333;
+  --card-bg: #ffffff;
+  --hover-color: #007a7a;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Navigation */
+nav.sticky {
+  background: var(--primary-color);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background: var(--accent-color);
+  border-radius: 4px;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.link-button {
+  background: var(--accent-color);
+  border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to bottom, var(--primary-color), var(--background-color));
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--accent-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: var(--hover-color);
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  display: flex;
+  max-width: 1200px;
+  margin: 2rem auto;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.image-container img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.text-container {
+  flex: 1;
+}
+
+.text-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.text-container p {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/* Bio Section */
+.bio-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.bio-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.bio-container h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+}
+
+#bio-sub {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.bio-role {
+  background: var(--card-bg);
+  border-radius: 6px;
+  padding: 1rem;
+  flex: 1;
+  min-width: 280px;
+}
+
+.bio-role-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.bio-date {
+  font-style: italic;
+  color: #555;
+}
+
+.bio-role-description {
+  margin-top: 0.5rem;
+  color: #666;
+  text-align: justify;
+}
+
+#vol-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.bio-subsection {
+  margin-bottom: 1rem;
+}
+
+#bio-sub-1, #bio-sub {
+  padding-left: 0.5rem;
+}
+
+#bio-sub-sec {
+  padding-left: 1.5rem;
+}
+
+#vol-head {
+  font-size: 1rem;
+  text-align: left;
+}
+
+/* Portfolio Section */
+.portfolio-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.portfolio-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.skill-group {
+  margin-bottom: 1rem;
+}
+
+.skill-group h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.skill-list li {
+  background: #e4e4e4;
+  padding: 0.3rem 0.6rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+}
+
+.skill-list li:hover {
+  background: #ccc;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-box {
+  background: var(--card-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-box:hover {
+  transform: scale(1.05);
+}
+
+.project-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-details {
+  padding: 1rem;
+}
+
+.project-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.project-focus,
+.project-tech,
+.project-summary {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.project-summary {
+  text-align: justify;
+}
+
+.certificates-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.certificate-box {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.certificate-box:hover {
+  transform: translateY(-5px);
+}
+
+.certificate-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.certificate-company {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Resume Section */
+.resume-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.resume-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.social-links a {
+  color: var(--primary-color);
+  font-size: 2rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: var(--accent-color);
+}
+
+.download-button {
+  display: inline-block;
+  background: var(--accent-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.download-button:hover {
+  background: var(--hover-color);
+}
+
+.resume-img {
+  max-width: 50%;
+  margin: 1rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+.contact-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.contact-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.contact-box {
+  width: 160px;
+  padding: 1rem;
+  background: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.contact-box:hover {
+  transform: scale(1.05);
+}
+
+.contact-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.contact-box i {
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+.contact-box span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+footer .social-links {
+  margin-bottom: 1rem;
+}
+
+/* Back to Top Button */
+#back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: none;
+  transition: opacity 0.3s;
+}
+
+#back-to-top:hover {
+  background: var(--hover-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: var(--primary-color);
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .image-container img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .project-box {
+    width: 100%;
+  }
+
+  .resume-img {
+    max-width: 80%;
+  }
+
+  .contact-box {
+    width: 140px;
+  }
+
+  .skill-list li {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .text-container p {
+    font-size: 0.9rem;
+  }
+
+  .contact-box {
+    width: 120px;
+  }
+
+  .resume-img {
+    max-width: 90%;
+  }
+
+  .download-button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
