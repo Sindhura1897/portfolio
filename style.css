@@ -70,7 +70,7 @@ nav.sticky {
 
 /* Home Section */
 .hero {
-  background: linear-gradient(135deg, #4a7ca6, #66c2cc);
+  background: linear-gradient(135deg, #1a3c5e, #00a1a7);
   color: white;
   text-align: center;
   padding: 2rem 0;
@@ -133,7 +133,7 @@ nav.sticky {
 }
 
 .find-me .social-links a {
-  color: var(--accent-color);
+  color: var(--primary-color);
   font-size: 1.5rem;
   transition: color 0.3s;
 }
@@ -434,10 +434,6 @@ footer {
   color: white;
   text-align: center;
   padding: 2rem;
-}
-
-footer .social-links {
-  margin-bottom: 1rem;
 }
 
 #back-to-top {
