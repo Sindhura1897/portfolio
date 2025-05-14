@@ -100,8 +100,8 @@ nav.sticky {
 }
 
 .image-container img {
-  width: 220px; /* Reduced from 250px */
-  height: 220px; /* Reduced from 250px */
+  width: 220px; /* Changed from 250px */
+  height: 220px; /* Changed from 250px */
   border-radius: 50%;
   object-fit: cover;
 }
@@ -401,6 +401,7 @@ nav.sticky {
   background: var(--card-bg);
   border-radius: 8px;
   transition: transform 0.2s, box-shadow 0.2s; /* Added box-shadow to transition */
+  box-shadow: none; /* Removed default shadow */
 }
 
 .contact-box:hover {
@@ -481,8 +482,8 @@ footer {
   }
 
   .image-container img {
-    width: 180px; /* Reduced from 200px */
-    height: 180px; /* Reduced from 200px */
+    width: 180px; /* Changed from 200px */
+    height: 180px; /* Changed from 200px */
   }
 
   .project-box {
