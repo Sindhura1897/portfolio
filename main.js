@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Dynamic Tagline Cycling
+  const tagline = document.getElementById('dynamic-tagline');
+  const titles = ['Aspiring Data Professional', 'Cloud Enthusiast', 'Data Analyst', 'Data Engineer', 'Data Scientist'];
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % titles.length;
+    tagline.textContent = titles[index];
+  }, 3000);
+
   // Hamburger Menu Toggle
   const hamburger = document.querySelector('.hamburger');
   const navList = document.querySelector('.nav-list');
@@ -45,5 +55,16 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   backToTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Tab Switching
+  document.querySelectorAll('.tab-button').forEach(button => {
+    button.addEventListener('click', () => {
+      const tab = button.getAttribute('data-tab');
+      document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+      button.classList.add('active');
+      document.getElementById(tab).classList.add('active');
+    });
   });
 });
