@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Dynamic Tagline Cycling
   const tagline = document.getElementById('dynamic-tagline');
-  const titles = ['Aspiring Data Professional', 'Cloud Enthusiast', 'Data Analyst', 'Data Engineer', 'Data Scientist'];
+  const titles = ['an Aspiring Data Professional', 'a Cloud Enthusiast', 'a Data Analyst', 'a Data Engineer', 'a Data Scientist'];
   let index = 0;
 
   setInterval(() => {
     index = (index + 1) % titles.length;
     tagline.textContent = titles[index];
-  }, 3000);
+  }, 2000);
 
   // Hamburger Menu Toggle
   const hamburger = document.querySelector('.hamburger');
