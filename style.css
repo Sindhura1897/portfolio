@@ -100,8 +100,8 @@ nav.sticky {
 }
 
 .image-container img {
-  width: 250px;
-  height: 250px;
+  width: 220px; /* Reduced from 250px */
+  height: 220px; /* Reduced from 250px */
   border-radius: 50%;
   object-fit: cover;
 }
@@ -163,7 +163,7 @@ nav.sticky {
 
 #bio-sub {
   display: flex;
-  flex-direction: column; /* Changed to stack vertically */
+  flex-direction: column;
   gap: 1rem;
 }
 
@@ -400,12 +400,12 @@ nav.sticky {
   padding: 1rem;
   background: var(--card-bg);
   border-radius: 8px;
-  transition: transform 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s; /* Added box-shadow to transition */
 }
 
 .contact-box:hover {
   transform: scale(1.05);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Shadow only on hover */
 }
 
 .contact-link {
@@ -481,8 +481,8 @@ footer {
   }
 
   .image-container img {
-    width: 200px;
-    height: 200px;
+    width: 180px; /* Reduced from 200px */
+    height: 180px; /* Reduced from 200px */
   }
 
   .project-box {
