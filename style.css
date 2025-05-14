@@ -66,6 +66,12 @@ nav.sticky {
 .link-button {
   background: var(--accent-color);
   border-radius: 4px;
+  box-shadow: none; /* Ensure no default shadow */
+  transition: box-shadow 0.2s; /* Add transition for shadow */
+}
+
+.link-button:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Shadow on hover */
 }
 
 /* Home Section */
@@ -100,8 +106,8 @@ nav.sticky {
 }
 
 .image-container img {
-  width: 220px; /* Changed from 250px */
-  height: 220px; /* Changed from 250px */
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -400,13 +406,13 @@ nav.sticky {
   padding: 1rem;
   background: var(--card-bg);
   border-radius: 8px;
-  transition: transform 0.2s, box-shadow 0.2s; /* Added box-shadow to transition */
-  box-shadow: none; /* Removed default shadow */
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: none !important; /* Force no default shadow */
 }
 
 .contact-box:hover {
   transform: scale(1.05);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Shadow only on hover */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .contact-link {
@@ -482,8 +488,8 @@ footer {
   }
 
   .image-container img {
-    width: 180px; /* Changed from 200px */
-    height: 180px; /* Changed from 200px */
+    width: 180px;
+    height: 180px;
   }
 
   .project-box {
