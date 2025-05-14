@@ -163,7 +163,7 @@ nav.sticky {
 
 #bio-sub {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column; /* Changed to stack vertically */
   gap: 1rem;
 }
 
@@ -171,7 +171,6 @@ nav.sticky {
   background: var(--card-bg);
   border-radius: 6px;
   padding: 1rem;
-  flex: 1;
   min-width: 280px;
 }
 
