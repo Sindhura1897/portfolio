@@ -57,14 +57,31 @@ document.addEventListener('DOMContentLoaded', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  // Tab Switching
-  document.querySelectorAll('.tab-button').forEach(button => {
-    button.addEventListener('click', () => {
-      const tab = button.getAttribute('data-tab');
-      document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
-      document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
-      button.classList.add('active');
-      document.getElementById(tab).classList.add('active');
+  // Tab Switching for Bio Section
+  const bioTabContainer = document.querySelector('.bio-tabs');
+  if (bioTabContainer) {
+    bioTabContainer.querySelectorAll('.tab-button').forEach(button => {
+      button.addEventListener('click', () => {
+        const tab = button.getAttribute('data-tab');
+        bioTabContainer.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+        bioTabContainer.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+        button.classList.add('active');
+        bioTabContainer.querySelector(`#${tab}`).classList.add('active');
+      });
     });
-  });
+  }
+
+  // Tab Switching for Portfolio Section
+  const portfolioTabContainer = document.querySelector('.portfolio-tabs');
+  if (portfolioTabContainer) {
+    portfolioTabContainer.querySelectorAll('.tab-button').forEach(button => {
+      button.addEventListener('click', () => {
+        const tab = button.getAttribute('data-tab');
+        portfolioTabContainer.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+        portfolioTabContainer.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+        button.classList.add('active');
+        portfolioTabContainer.querySelector(`#${tab}`).classList.add('active');
+      });
+    });
+  }
 });
