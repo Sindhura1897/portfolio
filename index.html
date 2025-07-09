@@ -3,41 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Sai Sindhura Kollepara, an aspiring data professional and cloud enthusiast specializing in data science, machine learning, and cloud computing." />
+  <meta name="description" content="Portfolio of Sai Sindhura Kollepara, a data analyst skilled in SQL, Python, Power BI, Tableau, and cloud platforms with experience in behavioral, transaction, and survey data analysis." />
   <title>Sai Sindhura Kollepara | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="sticky" aria-label="Main navigation">
-    <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
-      <i class="fas fa-bars"></i>
-    </button>
-    <ul class="nav-list">
-      <li><a href="#home" class="nav-link" aria-current="page">Home</a></li>
-      <li><a href="#bio" class="nav-link">Bio</a></li>
-      <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-      <li><a href="#contact" class="nav-link link-button">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Home Section -->
   <section id="home" class="hero">
     <h1>Hi, I'm Sai Sindhura Kollepara</h1>
-    <p id="dynamic-tagline" class="tagline">an Aspiring Data Professional</p>
+    <p class="tagline">Insight-Driven Data Analyst</p>
     <div class="home-content">
       <div class="image-container">
         <img src="images/portfolio_pic.jpg" alt="Professional headshot" loading="lazy" />
       </div>
       <div class="text-container">
         <p>
-          I’m a driven data professional with a <strong>Master’s in Data Science</strong> from <strong>Indiana University Bloomington</strong>, where I honed my skills in advanced 
-          <strong>analytics</strong>, <strong>machine learning</strong>, and <strong>data visualization</strong>. My passion for continuous learning 
-          and technology drives me to uncover meaningful insights from complex datasets. With a <strong>strong work ethic</strong>, 
-          <strong>adaptability</strong>, and a <strong>data-driven mindset</strong>, I thrive in dynamic environments, focusing on delivering 
-          impactful solutions that empower organizations and communities.
+          I’m a data analyst with experience analyzing large-scale behavioral, survey, and transaction data to generate actionable business insights. Skilled in SQL, Python, Power BI, Tableau, and cloud platforms like AWS and GCP, I specialize in user engagement analysis, cohort segmentation, and retention modeling. My work supports marketing, product, and research teams through stakeholder-ready dashboards and strategic data recommendations.
         </p>
       </div>
     </div>
@@ -54,325 +36,51 @@
     </div>
   </section>
 
-  <!-- Bio Section -->
   <section id="bio" class="bio-container">
     <h2>Biography</h2>
-    <article id="summary">
-      <h3>Summary</h3>
-      <p class="bio-role-description">
-        Versatile data professional with strong experience across data analysis, engineering, and machine learning. Skilled in Python, SQL, and cloud platforms (AWS, GCP), with hands-on expertise in analyzing large datasets, building data pipelines, and developing predictive models. Proficient in tools like Power BI, Tableau, and Looker Studio for effective data visualization and reporting. Adept at transforming complex data into actionable insights to drive strategic decisions across business functions.
-      </p>
-    </article>
-    <div class="tab-container bio-tabs">
-      <div class="tab-buttons">
-        <button class="tab-button active" data-tab="work-exp">Work Experience</button>
-        <button class="tab-button" data-tab="education">Education</button>
-        <button class="tab-button" data-tab="volunteer">Volunteer Experience</button>
-      </div>
-      <div class="tab-content">
-        <div id="work-exp" class="tab-pane active">
-          <h3>Work Experience</h3>
-          <div id="bio-sub">
-            <div class="bio-role">
-              <div class="bio-role-header">
-                <p><strong>Research Assistant (Faculty Assistantship in Data Science) – Data Science & AI Lab, Kelley School of Business, Indiana University Bloomington</strong></p>
-                <div class="bio-date">Jan 2025 - May 2025</div>
-              </div>
-              <p class="bio-role-description">Conducted advanced multimodal analysis of behavioral and survey data to identify mental health risks in first-year undergraduates for early intervention. Derived mental health scores from survey responses using Python and Pandas, stratifying students into diagnostic severity groups. Engineered behavioral features from health metrics, device usage, and social interactions, applying temporal trend analysis to detect deviations. Developed a time-aligned data fusion framework to integrate multi-source features with survey timelines for precise symptom-behavior mapping. Built an interactive Plotly Dash research dashboard with demographic filtering, correlation heatmaps, and divergence analysis to empower researchers in identifying at-risk students.</p>
-            </div>
-            <div class="bio-role">
-              <div class="bio-role-header">
-                <p><strong>Project Engineer – Wipro, India</strong></p>
-                <div class="bio-date">Dec 2021 - Aug 2023</div>
-              </div>
-              <p class="bio-role-description">leveraged Oracle SQL to retrieve and manipulate work order tickets for Mastercard’s Bill Pay, achieving 95% customer satisfaction and compliance. Developed and monitored Splunk dashboards with automated alerts using Search Processing Language to visualize incident trends and detect anomalies, reducing critical incidents by 30% and improving response time by 35%. Utilized Jenkins to automate CI/CD pipelines, enhancing deployment efficiency by 25%. Conducted daily system surveillance with SQL and Splunk, analyzing large datasets to decrease downtime by 15% and boost reliability. Collaborated with data teams to integrate ETL processes, improving data quality for analytics and reporting in the Bill Pay ecosystem.</p>
-            </div>
-          </div>
-        </div>
-        <div id="education" class="tab-pane">
-          <h3>Education</h3>
-          <div id="bio-sub">
-            <div class="bio-role">
-              <div class="bio-role-header">
-                <p><strong>Master's in Data Science – Indiana University Bloomington</strong></p>
-                <div class="bio-date">Aug 2023 - May 2025</div>
-              </div>
-              <p class="bio-role-description">Key Coursework: Data Visualization, Advanced Database Concepts, Applied Machine Learning, Data Mining, Cloud Computing-AWS, Statistics</p>
-            </div>
-            <div class="bio-role">
-              <div class="bio-role-header">
-                <p><strong>Bachelor of Technology in Electronics and Communication Engineering – Gayatri Vidya Parishad College of Engineering</strong></p>
-                <div class="bio-date">Aug 2017 - July 2021</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="volunteer" class="tab-pane">
-          <h3>Volunteer/Extracurricular Activities</h3>
-          <div id="vol-col">
-            <div class="bio-subsection">
-              <div id="bio-sub-1"><p><i>Indiana University Bloomington</i></p></div>
-              <div id="bio-sub">
-                <div class="bio-role" id="bio-sub-sec">
-                  <div class="bio-role-header">
-                    <h4 id="vol-head"><strong>Systems Inventory Assistant</strong> – IU Dining & Hospitality</h4>
-                    <div class="bio-date">Jan 2025 - May 2025</div>
-                  </div>
-                  <p class="bio-role-description">Maintained accurate inventory levels in campus dining locations including campus stores and Starbucks and ensured smooth operations by tracking and recording inventory, conducting monthly audits, and managing bins and storage areas. Monitored stock levels, and ensured accurate data entry utilizing inventory management software.</p>
-                </div>
-                <div class="bio-role" id="bio-sub-sec">
-                  <div class="bio-role-header">
-                    <h4 id="vol-head"><strong>Part-Time Shift Supervisor</strong> – McNutt/Briscoe C-Stores, McNutt Eatery</h4>
-                    <div class="bio-date">Aug 2024 - May 2025</div>
-                  </div>
-                  <p class="bio-role-description">Supervised staff, managed inventory, and handled opening/closing procedures. Trained part-time employees, ensured service quality, addressed customer concerns, and oversaw staffing, security, and inventory management to ensure smooth operations.</p>
-                </div>
-                <div class="bio-role" id="bio-sub-sec">
-                  <div class="bio-role-header">
-                    <h4 id="vol-head"><strong>Part-Time Guest Services Supervisor</strong> – IU Event Services</h4>
-                    <div class="bio-date">Aug 2024 - May 2025</div>
-                  </div>
-                  <p class="bio-role-description">Supervised event staff, managed crowd control, and resolved guest complaints, ensuring staff roles were assigned effectively and event operations ran smoothly.</p>
-                </div>
-              </div>
-            </div>
-            <div class="bio-subsection">
-              <div id="bio-sub"><p><i>Gayatri Vidya Parishad College of Engineering</i></p></div>
-              <div class="bio-role" id="bio-sub-sec">
-                <div class="bio-role-header">
-                  <h4><strong>Volunteer</strong> – Rotaract Club</h4>
-                  <div class="bio-date">Dec 2017 - Aug 2021</div>
-                </div>
-                <p class="bio-role-description">Organized community service projects including awareness events, food distribution, and educational initiatives, while also volunteering at orphanages and old age homes to support marginalized communities and promote social welfare.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <p class="bio-role-description">
+      Data Analyst with a Master’s in Data Science from Indiana University Bloomington. Experienced in analyzing behavioral and sensor data, developing dashboards in Plotly Dash and Tableau, and working across cloud platforms like AWS and GCP. Adept in SQL, Python, and data visualization, with proven ability to build insightful products and deliver business impact.
+    </p>
   </section>
 
-  <!-- Portfolio Section -->
   <section id="portfolio" class="portfolio-container">
-    <h2>Portfolio</h2>
-    <div class="tab-container portfolio-tabs">
-      <div class="tab-buttons">
-        <button class="tab-button active" data-tab="projects">Projects</button>
-        <button class="tab-button" data-tab="skills">Skills</button>
-        <button class="tab-button" data-tab="certifications">Certifications</button>
-      </div>
-      <div class="tab-content">
-        <div id="projects" class="tab-pane active">
-          <h3>Projects</h3>
-          <div class="projects-container">
-            <a href="https://github.com/Sindhura1897/Data-Mining_Reddit-Comments-to-Post-Relevence-Analysis" target="_blank" class="project-box">
-              <img src="images/reddit.jpg" alt="Reddit Comments Analysis project thumbnail" class="project-img" loading="lazy" />
-              <div class="project-details">
-                <div class="project-title">Reddit Comments to Post Relevance Analysis</div>
-                <div class="project-focus"><strong>Focus:</strong> NLP, embeddings, clustering relevance of Reddit comments.</div>
-                <div class="project-tech"><strong>Tech:</strong> Python, Topic Modeling, Transfer Learning, API</div>
-                <div class="project-summary">Hybrid model combining semantic similarity, engagement, and sentiment to analyze and rank the relevance of Reddit comments to posts.</div>
-              </div>
-            </a>
-            <a href="https://github.com/Sindhura1897/Global-Greenhouse-Gas-Emissions-Visualization-and-Prediction/tree/main/Visualization_Dashboard" target="_blank" class="project-box">
-              <img src="images/emissions.jpg" alt="Global Greenhouse Gas Emissions Dashboard project thumbnail" class="project-img" loading="lazy" />
-              <div class="project-details">
-                <div class="project-title">Global Greenhouse Gas Emissions Dashboard</div>
-                <div class="project-focus"><strong>Focus:</strong> Visualization of GHG trends, carbon tax policy, temperature impact.</div>
-                <div class="project-tech"><strong>Tech:</strong> Plotly Dash, Pandas, Choropleth maps</div>
-                <div class="project-summary">Interactive dashboard visualizing global greenhouse gas emissions trends and analyzing the impact of various carbon tax policies.</div>
-              </div>
-            </a>
-            <a href="https://github.com/Sindhura1897/Data-Visualization_Stack-Overflow-Users-Survey-Analysis" target="_blank" class="project-box">
-              <img src="images/dashboard.jpg" alt="Stack Overflow Users Survey Analysis project thumbnail" class="project-img" loading="lazy" />
-              <div class="project-details">
-                <div class="project-title">Stack Overflow Users Survey Analysis</div>
-                <div class="project-focus"><strong>Focus:</strong> Demographic and tech preference insights through Power BI.</div>
-                <div class="project-tech"><strong>Tech:</strong> Power BI, SQL, DAX</div>
-                <div class="project-summary">Stack Overflow user survey data dashboard to derive insights on demographic trends and technology preferences using Power BI with drill-down features.</div>
-              </div>
-            </a>
-            <a href="https://github.com/Sindhura1897/Global-Greenhouse-Gas-Emissions-Visualization-and-Prediction/tree/main/ML-Prediction" target="_blank" class="project-box">
-              <img src="images/emissions2.jpg" alt="Per-Capita Greenhouse Gas Emissions project thumbnail" class="project-img" loading="lazy" />
-              <div class="project-details">
-                <div class="project-title">Per-Capita Greenhouse Gas Emissions</div>
-                <div class="project-focus"><strong>Focus:</strong> Emissions analysis and prediction.</div>
-                <div project-tech"><strong>Tech:</strong> BigQuery, Looker Studio, Machine Learning, GCP</div>
-                <div class="project-summary">Prediction model for per-capita greenhouse gas emissions using machine learning algorithms, achieving 96% accuracy.</div>
-              </div>
-            </a>
-            <a href="https://www.credly.com/go/sNjMpkGh" target="_blank" class="project-box">
-              <img src="images/aws.webp" alt="Scalable Student Records Web App project thumbnail" class="project-img" loading="lazy" />
-              <div class="project-details">
-                <div class="project-title">Scalable Student Records Web App on AWS</div>
-                <div class="project-focus"><strong>Focus:</strong> CRUD app with AWS best practices.</div>
-                <div class="project-tech"><strong>Tech:</strong> AWS, Virtual Servers, Relational Database, Load Balancing, Virtual Networking, Access & Credential Management</div>
-                <div class="project-summary">Scalable web application for managing student records using AWS services. Implemented auto-scaling and load balancing for high availability and peak performance.</div>
-              </div>
-            </a>
-            <a href="https://github.com/Sindhura1897/Sentiment_Analysis_Gamesphere_Reviews" target="_blank" class="project-box">
-              <img src="images/gamesphere.jpg" alt="Gamesphere Reviews project thumbnail" class="project-img" loading="lazy" />
-              <div class="project-details">
-                <div class="project-title">Sentiment Analysis on Gamesphere Reviews</div>
-                <div class="project-focus"><strong>Focus:</strong> Classifying sentiment in reviews.</div>
-                <div class="project-tech"><strong>Tech:</strong> NLTK, Scikit-learn, Pandas</div>
-                <div class="project-summary">Sentiment analysis on gaming reviews to classify sentiments into positive, neutral, or negative categories. Achieved 84% accuracy, optimized using GridSearchCV for hyperparameter tuning.</div>
-              </div>
-            </a>
-            <a href="https://github.com/Sindhura1897/Emotion_Classification_Using_NLP" target="_blank" class="project-box">
-              <img src="images/sentiment.webp" alt="Emotion Classification project thumbnail" class="project-img" loading="lazy" />
-              <div class="project-details">
-                <div class="project-title">Emotion Classification Using NLP</div>
-                <div class="project-focus"><strong>Focus:</strong> Classifying text into emotion categories.</div>
-                <div class="project-tech"><strong>Tech:</strong> NLP, Topic Modeling, traditional ML models</div>
-                <div class="project-summary">Classification of text into emotion categories (e.g., joy, anger, sadness) using NLP techniques. Achieved 85% accuracy through strong feature engineering and model selection.</div>
-              </div>
-            </a>
-            <a href="https://github.com/Sindhura1897/Customer_Churn_Analysis" target="_blank" class="project-box">
-              <img src="images/churn.jpg" alt="Customer Churn Analysis project thumbnail" class="project-img" loading="lazy" />
-              <div class="project-details">
-                <div class="project-title">Customer Churn Analysis</div>
-                <div class="project-focus"><strong>Focus:</strong> Predicting customer churn.</div>
-                <div class="project-tech"><strong>Tech:</strong> Python, SciKit-learn, Ensemble models, Pandas</div>
-                <div class="project-summary">Machine learning model to predict customer churn and identify at-risk customers. Focused on maximizing business impact by providing actionable insights for retention strategies.</div>
-              </div>
-            </a>
-            <a href="https://github.com/Sindhura1897/Portfolio_SSK" target="_blank" class="project-box">
-              <img src="images/portfolio.jpg" alt="Personal Portfolio Website project thumbnail" class="project-img" loading="lazy" />
-              <div class="project-details">
-                <div class="project-title">Personal Portfolio Website</div>
-                <div class="project-focus"><strong>Focus:</strong> Creating an interactive web presence.</div>
-                <div class="project-tech"><strong>Tech:</strong> Web Development, Visual Studio Code</div>
-                <div class="project-summary">Multi-page portfolio website featuring sections like Home, Bio, Portfolio, Resume, and Contact. Focused on clean UI and smooth navigation to showcase professional projects and personal brand.</div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div id="skills" class="tab-pane">
-          <h3>Skills</h3>
-          <div class="skill-group">
-            <h4><i class="fa-solid fa-laptop-code"></i> Programming Languages</h4>
-            <ul class="skill-list">
-              <li>Python</li><li>Numpy</li><li>pandas</li><li>R</li><li>JavaScript</li><li>SQL</li><li>C#</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h4><i class="fa-solid fa-chart-line"></i> Data Visualization & BI</h4>
-            <ul class="skill-list">
-              <li>Power BI</li><li>Tableau</li><li>Looker Studio</li><li>Excel</li><li>Matplotlib</li><li>Plotly</li><li>Seaborn</li><li>Dash</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h4><i class="fa-solid fa-sitemap"></i> Data Engineering & Modeling</h4>
-            <ul class="skill-list">
-              <li>ETL/ELT</li><li>Apache Spark</li><li>Hadoop</li><li>Databricks</li><li>Data Lake Architecture</li><li>Data Modeling</li><li>Cloudera Impala</li><li>Data Pipeline Automation</li><li>SQL Performance Optimization</li><li>Snowflake</li><li>Redshift</li><li>Glue</li><li>Database Management</li><li>Data Warehousing</li><li>Automation</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h4><i class="fa-solid fa-robot"></i> Machine Learning & AI</h4>
-            <ul class="skill-list">
-              <li>NLP</li><li>Time Series Analysis</li><li>Deep Learning</li><li>scikit-learn</li><li>Sentiment Analysis</li><li>Feature Engineering</li><li>Transformers</li><li>A/B Testing</li><li>Neural Networks</li><li>TensorFlow</li><li>PySpark</li><li>Hugging Face</li><li>PyTorch</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h4><i class="fa-solid fa-cloud"></i> Big Data & Cloud Computing</h4>
-            <ul class="skill-list">
-              <li>AWS (EC2, S3, QuickSight, Lambda, SageMaker)</li><li>GCP (BigQuery, Compute Engine, Kubernetes Engine, Cloud Storage)</li><li>Azure (VMs, Blob Storage, SQL Database, Active Directory)</li><li>Real-time Streaming</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h4><i class="fa-solid fa-database"></i> Database Technologies</h4>
-            <ul class="skill-list">
-              <li>MySQL</li><li>PostgreSQL</li><li>MongoDB</li><li>NoSQL</li><li>SQLite</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h4><i class="fa-solid fa-tools"></i> DevOps & Tools</h4>
-            <ul class="skill-list">
-              <li>Docker</li><li>Kubernetes</li><li>CI/CD</li><li>Agile (Scrum)</li><li>GitHub</li><li>Git</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h4><i class="fa-solid fa-microchip"></i> Other Technologies</h4>
-            <ul class="skill-list">
-              <li>Robotic Process Automation (UiPath)</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h4><i class="fa-solid fa-user-check"></i> Soft Skills</h4>
-            <ul class="skill-list">
-              <li>Customer Service</li><li>Operations Management</li><li>Leadership</li><li>Inventory Management</li><li>Problem-Solving</li><li>Time Management</li>
-            </ul>
-          </div>
-        </div>
-        <div id="certifications" class="tab-pane">
-          <h3>Certifications</h3>
-          <div class="certificates-container">
-            <a href="https://learn.microsoft.com/en-us/users/saisindhurakollepara-7506/transcript/dz5gt89y6jrepjd" target="_blank" class="certificate-box">
-              <div class="certificate-title">Power BI Data Analyst Associate</div>
-              <div class="certificate-company">Microsoft</div>
-            </a>
-            <a href="https://www.credly.com/badges/a5420632-cb03-4d8e-8458-f4635891f264/linked_in_profile" target="_blank" class="certificate-box">
-              <div class="certificate-title">Cloud Practitioner</div>
-              <div class="certificate-company">AWS</div>
-            </a>
-            <a href="https://learn.microsoft.com/en-us/users/kolleparasaisindhura-8595/transcript/drgmlulmyollq0z" target="_blank" class="certificate-box">
-              <div class="certificate-title">Azure Fundamentals</div>
-              <div class="certificate-company">Microsoft</div>
-            </a>
-            <a href="https://www.credly.com/go/sNjMpkGh" target="_blank" class="certificate-box">
-              <div class="certificate-title">Cloud Web Application Builder</div>
-              <div class="certificate-company">AWS Academy</div>
-            </a>
-            <a href="https://www.credly.com/go/la4O6774" target="_blank" class="certificate-box">
-              <div class="certificate-title">Cloud Architecting</div>
-              <div class="certificate-company">AWS Academy</div>
-            </a>
-          </div>
-        </div>
-      </div>
+    <h2>Portfolio Projects</h2>
+    <div class="projects-container">
+      <a href="https://github.com/Sindhura1897/Global-Greenhouse-Gas-Emissions-Visualization-and-Prediction" target="_blank" class="project-box">
+        <div class="project-title">Per-Capita Emissions Visualization & Reporting</div>
+        <p>Processed 42K+ emission records, built choropleth maps in Plotly, and deployed a Looker Studio dashboard for regional carbon policy insights.</p>
+      </a>
+      <a href="https://github.com/Sindhura1897/Data-Visualization_Stack-Overflow-Users-Survey-Analysis" target="_blank" class="project-box">
+        <div class="project-title">Stack Overflow Developer Trends Dashboard</div>
+        <p>Analyzed 100K+ responses and created interactive Power BI dashboards for tech hiring and planning use cases.</p>
+      </a>
+      <a href="https://github.com/Sindhura1897/Customer_Churn_Analysis" target="_blank" class="project-box">
+        <div class="project-title">Customer Churn Analysis</div>
+        <p>Used scikit-learn and ensemble models to predict churn and deliver insights for improving customer retention.</p>
+      </a>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Languages: Python, SQL, R</li>
+      <li>Dashboards: Power BI, Tableau, Looker Studio</li>
+      <li>Cloud: AWS, GCP</li>
+      <li>Tools: pandas, NumPy, Plotly, Dash, Excel</li>
+      <li>Databases: MySQL, PostgreSQL, Athena, BigQuery, Snowflake</li>
+    </ul>
+  </section>
+
   <section id="contact" class="contact-container">
     <h2>Contact</h2>
-    <div class="contact-boxes">
-      <div class="contact-box">
-        <a href="mailto:skollep@iu.edu" target="_blank" class="contact-link">
-          <i class="fas fa-envelope-open"></i>
-          <span>Outlook</span>
-        </a>
-      </div>
-      <div class="contact-box">
-        <a href="mailto:sindhurakollepara29@gmail.com" target="_blank" class="contact-link">
-          <i class="fab fa-google"></i>
-          <span>Gmail</span>
-        </a>
-      </div>
-      <div class="contact-box">
-        <a href="tel:+19303334191" class="contact-link">
-          <i class="fa fa-phone"></i>
-          <span>Phone</span>
-        </a>
-      </div>
-      <div class="contact-box">
-        <a href="https://wa.me/19303334191" target="_blank" class="contact-link">
-          <i class="fab fa-whatsapp"></i>
-          <span>WhatsApp</span>
-        </a>
-      </div>
-    </div>
+    <p>Email: <a href="mailto:sindhurakollepara29@gmail.com">sindhurakollepara29@gmail.com</a></p>
+    <p>Phone (US): <a href="tel:+19303334191">+1 (930) 333-4191</a></p>
+    <p>Phone (India): <a href="tel:+919494910958">+91-9494910958</a></p>
   </section>
 
   <footer>
     <p>© 2025 Sai Sindhura Kollepara. Made with 💖</p>
   </footer>
-
-  <button id="back-to-top" aria-label="Back to top">
-    <i class="fas fa-arrow-up"></i>
-  </button>
-
-  <script src="main.js"></script>
 </body>
 </html>
