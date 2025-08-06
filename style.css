@@ -378,6 +378,7 @@ nav.sticky {
   text-align: center;
   transition: transform 0.3s;
   text-decoration: none;
+  color: inherit;
 }
 
 .certificate-box:hover {
