@@ -482,6 +482,18 @@ footer {
   background: var(--hover-color);
 }
 
+.hero {
+  background: linear-gradient(to bottom, var(--primary-color), var(--background-color));
+  color: white;
+  text-align: center;
+  padding: 2rem 4rem;   /* 👈 ADD horizontal padding */
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .nav-list {
